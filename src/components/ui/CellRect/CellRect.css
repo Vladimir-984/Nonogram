@@ -1,0 +1,7 @@
+.CellRect {
+    background-color: currentColor;
+}
+
+.CellRect--round {
+    border-radius: 4px;
+}

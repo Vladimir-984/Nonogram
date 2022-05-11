@@ -1,0 +1,43 @@
+.vkuiTappable.ActionButton {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--vkui--color_background_secondary);
+    color: var(--vkui--color_icon_secondary);
+    box-shadow: 0 0 0 0.4px var(--vkui--color_icon_tertiary_alpha);
+    transition: none;
+}
+
+.vkuiTappable.ActionButton.ActionButton--m-selectable {
+    color: var(--nonogram_accent_light);
+}
+
+.vkuiTappable.vkuiActionButton--active {
+    color: var(--nonogram_accent_light);
+    background-color: var(--vkui--color_background_modal);
+    transform: scale(1.02);
+}
+.ActionButton--selected {
+    border: 2px solid var(--nonogram_accent_light);
+}
+
+.ActionButton__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ActionButton__indicator {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: var(--counter_primary_background);
+    color: var(--counter_primary_text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}

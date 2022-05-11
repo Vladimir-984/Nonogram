@@ -1,0 +1,120 @@
+.vkuiPopoutRoot__modal:empty {
+    display: none;
+}
+.vkuiPopoutRoot__popout:empty {
+    display: none;
+} 
+.vkuiPopoutRoot--absolute:empty {
+    display: none;
+}
+
+
+
+.vkuiEpic.vkuiEpic--no-tabbar .vkuiFixedLayout--bottom,
+.vkuiEpic.vkuiEpic--no-tabbar .vkuiPanel__in {
+    padding-bottom: 0px;
+    padding-bottom: var(--safe-area-inset-bottom);
+}
+
+.vkuiEpic.vkuiEpic--tabbar .vkuiFixedLayout--bottom,
+.vkuiEpic.vkuiEpic--tabbar .vkuiPanel__in {
+    padding-bottom: 48px;
+    padding-bottom: var(--tabbar_height);
+    padding-bottom: calc(0px + 48px);
+    padding-bottom: calc(var(--safe-area-inset-bottom) + var(--tabbar_height));
+}
+
+
+
+.Panel--background.vkuiPanel .vkuiPanel__in, .Panel--background.vkuiPanel::after,
+.Panel--background.vkuiPanel.vkuiPanel--regular .vkuiPanel__in, .Panel--background.vkuiPanel.vkuiPanel--regular::after {
+    background-color: var(--background_page);
+}
+.Panel--game.vkuiPanel .vkuiPanel__in, .Panel--game.vkuiPanel::after,
+.Panel--game.vkuiPanel.vkuiPanel--regular .vkuiPanel__in, .Panel--game.vkuiPanel.vkuiPanel--regular::after {
+    background-color: var(--background_content);
+}
+
+.vkuiCardGrid .vkuiCard {
+    background-color: #fff;
+}
+
+.vkuiCard .vkuiCard__in .vkuiSimpleCell + .vkuiSeparator {
+    padding-left: 12px;
+}
+.vkuiCard .vkuiCard__in .vkuiSimpleCell + .vkuiSeparator.Separator--after-avatar {
+    padding-left: 60px;
+}
+
+.vkuiCardGrid .vkuiCard .vkuiCard__in .vkuiTappable {
+    border-radius: inherit;
+}
+.vkuiCardGrid .vkuiCard .vkuiCard__in .vkuiTappable:first-of-type {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.vkuiCardGrid .vkuiCard .vkuiCard__in .vkuiTappable:last-of-type {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.vkuiCardGrid .vkuiCard .vkuiCard__in .vkuiTappable:only-of-type {
+    border-radius: inherit;
+}
+
+
+
+
+.vkuiTappable--active-background-highlighted-darken {
+    --background-highlighted-darken: rgba(0,0,0,0.2);
+    background-color: var(--background-highlighted-darken);
+}
+.vkuiTappable.Tappable--brightness {
+    transition: filter .15s ease-out;
+}
+.vkuiTappable--hover-brightness {
+    filter: brightness(.9);
+}
+.vkuiTappable--active-brightness {
+    filter: brightness(.75);
+}
+
+
+
+
+.vkuiButton.Button--round {
+    border-radius: 30px;
+}
+.vkuiButton .vkuiButton__in .vkuiButton__content {
+    flex: 1;
+}
+
+
+.Typography--secondary {
+    color: var(--text_secondary);
+}
+.Typography--subhead {
+    color: var(--text_subhead);
+}
+.Typography--tertiary {
+    color: var(--text_tertiary);
+}
+
+
+.ActionSheetPuzzle.vkuiCard {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    padding: 10px 10px;
+    border-radius: 14px;
+
+    z-index: 2;
+}
+.ActionSheetPuzzle .vkuiActionSheet .vkuiActionSheetItem:first-of-type {
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}

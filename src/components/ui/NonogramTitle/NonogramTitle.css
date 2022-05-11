@@ -1,0 +1,6 @@
+.NonogramTitle {
+    font-size: 52px;
+    font-weight: 600;
+    color: var(--nonogram-accent);
+    margin: 0;
+}

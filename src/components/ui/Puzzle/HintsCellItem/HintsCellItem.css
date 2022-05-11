@@ -1,0 +1,18 @@
+.HintsCellItem {
+    color: var(--nonogram_hints_cell_item_color--primary);
+    z-index: 1;
+}
+.HintsCellItem--solved {
+    color: var(--nonogram_hints_cell_item_color--secondary);
+}
+.HintsCellItem--animation {
+    color: var(--nonogram_hints_cell_item_color--animation);
+}
+
+.HintsCell--m-horizontal .HintsCellItem  {
+    line-height: 0;
+    margin-left: 2px;
+}
+.Hints--sz-xl.Hints--m-horizontal .HintsCell--m-vertical .HintsCellItem {
+    line-height: 10px;
+}

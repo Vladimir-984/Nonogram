@@ -1,0 +1,65 @@
+.HealthItem {
+    width: 32px;
+    height: 32px;
+    color: var(--nonogram_background_health);
+}
+
+.HealthItem--hide {
+    opacity: 0;
+}
+
+.HealthItem--intro {
+    transform-origin: center center;
+    animation: health-item-animation-intro .12s ease-out;
+}
+.HealthItem--intro:nth-child(2) {
+    animation-delay: .12s;
+}
+.HealthItem--intro:nth-child(3) {
+    animation-delay: .24s;
+}
+
+.HealthItem svg {
+    stroke: rgba(0,0,0,.12);
+}
+
+.HealthItem--active {
+    color: var(--nonogram_background_health--active);
+}
+
+
+.HealthItem--shake {
+    animation: health-item-animation-shake .3s ease;
+}
+
+@keyframes health-item-animation-intro {
+    0% {
+        transform: scale(2);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes health-item-animation-shake {
+    0% {
+        transform: translateX(0);
+    }
+    9% {
+        transform: translateX(-6px);
+    }
+    22% {
+        transform: translateX(5px);
+    }
+    34% {
+        transform: translateX(-3px);
+    }
+    47% {
+        transform: translateX(2px);
+    }
+    60% {
+        transform: translateX(0);
+    }
+}

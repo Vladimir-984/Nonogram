@@ -1,0 +1,22 @@
+:root {
+    --nonogram_accent: #344861;
+    --nonogram-accent: #344861;
+    --nonogram_accent_light: #2f85e9;
+    --nonogram_text_primary:#16273f;
+
+    --nonogram_background_secret_level:#9b22b8;
+
+    --nonogram_background_health: #e4e8ef;
+    --nonogram_background_health--active: #ff2a34;
+    
+
+    --nonogram_background_hints_cell: #ebeff8;
+    --nonogram_background_hints_cell--animation: #c2d0ff;
+    --nonogram_background_hints_cell--secondary: #fff;
+
+    --nonogram_hints_cell_item_color--primary: #323156;
+    --nonogram_hints_cell_item_color--animation: #309fd0;
+    --nonogram_hints_cell_item_color--secondary: #d6d6da;
+    --nonogram_hints_cell_item_color--secondary-alternate: #c7ccd4;
+
+}

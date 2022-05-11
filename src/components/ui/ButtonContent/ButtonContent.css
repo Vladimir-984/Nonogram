@@ -1,0 +1,9 @@
+.ButtonContent {
+    flex-grow: 1;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.ButtonContent--with-subhead {
+    padding-top: 6px;
+    padding-bottom: 5px;
+}

@@ -1,0 +1,61 @@
+.Hints {
+    display: flex;
+    box-sizing: border-box;
+
+    --margin_hints_cell: 1px;
+    --padding_hints: 4px;
+    --nonogram--size_puzzle_s: 5;
+    --nonogram--size_puzzle_m: 10;
+    --nonogram--size_puzzle_l: 15;
+    --nonogram--size_puzzle_xl: 20;
+}
+.Hints--m-vertical {
+    width: var(--puzzle_wrapper_basis_size);
+    flex-direction: column;
+    flex: 0 0 var(--puzzle_wrapper_basis_size);
+
+    padding-right: var(--padding_hints);
+}
+.Hints--m-horizontal {
+    height: var(--puzzle_wrapper_basis_size);
+    flex: 1 0 var(--puzzle_wrapper_basis_size);
+    
+    padding-bottom: var(--padding_hints);
+}
+
+.Hints--sz-s.Hints--m-vertical .HintsCell--m-horizontal {
+    height: calc((100% - var(--nonogram--size_puzzle_s) * var(--margin_hints_cell)) / var(--nonogram--size_puzzle_s));
+}
+.Hints--sz-m.Hints--m-vertical .HintsCell--m-horizontal {
+    height: calc((100% - var(--nonogram--size_puzzle_m) * var(--margin_hints_cell)) / var(--nonogram--size_puzzle_m) );
+}
+.Hints--sz-l.Hints--m-vertical .HintsCell--m-horizontal {
+    height: calc((100% - var(--nonogram--size_puzzle_l) * var(--margin_hints_cell)) / var(--nonogram--size_puzzle_l) );
+}
+.Hints--sz-xl.Hints--m-vertical .HintsCell--m-horizontal {
+    height: calc((100% - var(--nonogram--size_puzzle_xl) * var(--margin_hints_cell)) / var(--nonogram--size_puzzle_xl) );
+}
+
+
+.Hints--sz-s.Hints--m-horizontal .HintsCell--m-vertical {
+    width: calc((100% - var(--nonogram--size_puzzle_s) * var(--margin_hints_cell)) / var(--nonogram--size_puzzle_s));
+}
+.Hints--sz-m.Hints--m-horizontal .HintsCell--m-vertical {
+    width: calc((100% - var(--nonogram--size_puzzle_m) * var(--margin_hints_cell)) / var(--nonogram--size_puzzle_m));
+}
+.Hints--sz-l.Hints--m-horizontal .HintsCell--m-vertical {
+    width: calc((100% - var(--nonogram--size_puzzle_l) * var(--margin_hints_cell)) / var(--nonogram--size_puzzle_l));
+}
+.Hints--sz-xl.Hints--m-horizontal .HintsCell--m-vertical {
+    width: calc((100% - var(--nonogram--size_puzzle_l) * var(--margin_hints_cell)) / var(--nonogram--size_puzzle_l));
+}
+
+
+
+.Hints--sz-s {}
+
+.Hints--sz-m {}
+
+.Hints--sz-l {}
+
+.Hints--sz-xl {}

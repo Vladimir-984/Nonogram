@@ -1,0 +1,36 @@
+.ContainerSegment.GameActions {
+    padding-bottom: 10px;
+    overflow: hidden;
+    flex: 1 0 auto;
+}
+.GameActions__in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.GameActions__in--intro {
+   
+    animation: game-actions-animation-intro .3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.GameAction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 0;
+}
+
+@keyframes game-actions-animation-intro {
+    0% {
+        opacity: 0;
+        transform: translateY(150px);
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,13 @@
+.AlertPreviewCollection .Alert__content-container {
+    padding: 12px 0 12px;
+}
+.AlertPreviewCollection .vkuiGallery {
+    margin: 12px 0;
+}
+.AlertPreviewCollection .AlertPreviewCollection__title {
+    color: var(--nonogram_text_primary);
+}
+
+.AlertPreviewCollection .vkuiGallery__bullets--light .vkuiGallery__bullet {
+    background-color: var(--nonogram_accent_light);
+}

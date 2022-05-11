@@ -1,0 +1,13 @@
+.Tabs__in,
+.Tabs .HorizontalScroll__in-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.Tabs .HorizontalScroll {
+  min-width: 100%;
+}
+
+.Tabs .HorizontalScroll__in-wrapper {
+  justify-content: flex-start;
+}

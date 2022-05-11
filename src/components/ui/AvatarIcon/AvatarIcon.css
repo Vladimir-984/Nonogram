@@ -1,0 +1,12 @@
+.vkuiAvatar.AvatarIcon--red {
+    background-color: var(--dynamic_red);
+}
+.vkuiAvatar.AvatarIcon--green {
+    background-color: var(--dynamic_green);
+}
+.vkuiAvatar.AvatarIcon--blue {
+    background-color: var(--dynamic_blue);
+}
+.vkuiAvatar.AvatarIcon--orange {
+    background-color: var(--dynamic_orange);
+}

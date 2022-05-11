@@ -1,0 +1,33 @@
+.GameWrapper {
+    --game_wrapper_basis_size: 82px
+}
+.ContainerSegment.GameWrapper {
+    padding: 0 8px;
+    flex: 0 0 auto;
+}
+.GameWrapper__in {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.GameWrapper__top {
+    display: flex;
+    flex: 0 0 var(--game_wrapper_basis_size);
+    width: 100%;
+    height: var(--game_wrapper_basis_size);
+}
+.GameWrapper__top--empty-rect {
+    width: var(--game_wrapper_basis_size);
+    height: var(--game_wrapper_basis_size);
+    flex: 0 0 var(--game_wrapper_basis_size);
+}
+.GameWrapper__bottom {
+    display: flex;
+    width: 100%;
+    flex: 0 0;
+}
+.GameWrapper__puzzle {
+    flex: 1;
+}

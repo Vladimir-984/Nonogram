@@ -1,0 +1,49 @@
+.HintsCell {
+    display: flex;
+    background-color: var(--nonogram_background_hints_cell);
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 0px 1px  rgba(0,0,0,.12);
+    box-sizing: border-box;
+
+    position: relative;
+    transition: background-color .2s ease-in-out;
+}
+/* .HintsCell::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background-color: var(--nonogram_background_hints_cell);
+} */
+
+.HintsCell--animation {
+    background-color: var(--nonogram_background_hints_cell--animation);
+}
+.HintsCell--solved {
+    background-color: var(--nonogram_background_hints_cell--secondary);
+}
+
+.HintsCell--m-vertical {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: var(--margin_hints_cell);
+    margin-right: var(--margin_hints_cell);
+
+    padding-bottom: 4px;
+}
+.HintsCell--m-horizontal {
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: var(--margin_hints_cell);
+    margin-bottom: var(--margin_hints_cell);
+
+    padding-right: 4px;
+}

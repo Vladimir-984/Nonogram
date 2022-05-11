@@ -1,0 +1,33 @@
+.ActionControlOption {
+    height: 100%;
+    border: 0;
+    border-radius: inherit;
+    background: transparent;
+    color: var(--nonogram_accent);
+    user-select: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    appearance: none;
+}
+
+.ActionControlOption.ActionControlOption--checked .ActionControlOption__content {
+    transform: scale(1.08);
+}
+
+.ActionControlOption:not(.ActionControlOption--checked) {
+    opacity: 0.5;
+}
+
+/* .ActionControlOption:not(.ActionControlOption--checked):hover {
+    opacity: 0.7;
+} */
+  
+.ActionControlOption__content {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+}
